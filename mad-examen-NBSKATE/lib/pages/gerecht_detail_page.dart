@@ -47,7 +47,7 @@ class GerechtDetailPage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 16.0),
+            padding: const EdgeInsets.all(25.0),
             child: Text(
               description,
               style: TextStyle(
@@ -57,7 +57,6 @@ class GerechtDetailPage extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: const Navbar(),
     );
   }
 }

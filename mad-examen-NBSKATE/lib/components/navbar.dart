@@ -19,19 +19,22 @@ class _NavbarState extends State<Navbar> {
 
   @override
   Widget build(BuildContext context) {
-    return NavigationBar(
-      destinations: const [
-        NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),
-        NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
-        NavigationDestination(
-            icon: Icon(Icons.food_bank_rounded), label: 'Dishes'),
+    return BottomNavigationBar(
+      selectedItemColor: Colors.black,
+      items: const [
+        BottomNavigationBarItem(
+          icon: Icon(
+            Icons.person,
+          ),
+          label: 'Profiel',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(
+            Icons.food_bank,
+          ),
+          label: 'Gerechten',
+        ),
       ],
-      selectedIndex: currentIndex,
-      onDestinationSelected: (int index) {
-        setState(() {
-          currentIndex = index;
-        });
-      },
     );
   }
 }
