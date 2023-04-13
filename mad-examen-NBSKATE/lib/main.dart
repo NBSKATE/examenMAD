@@ -33,8 +33,8 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'Thuis Gemaakt',
       theme: ThemeData(
-          scaffoldBackgroundColor: const Color.fromARGB(255, 87, 87, 87),
-          primarySwatch: Colors.grey),
+          scaffoldBackgroundColor: const Color.fromARGB(244, 226, 222, 0),
+          primarySwatch: Colors.green),
       home: Scaffold(
         body: _pages[_currentPageIndex],
         bottomNavigationBar: BottomNavigationBar(
